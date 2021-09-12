@@ -1,4 +1,4 @@
-# Crud-Entidad Persona
+# CRUD-Entidad Persona
 
 ## Info 📋
 
