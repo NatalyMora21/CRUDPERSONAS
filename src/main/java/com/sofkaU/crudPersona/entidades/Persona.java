@@ -3,7 +3,7 @@ package com.sofkaU.crudPersona.entidades;
 import javax.persistence.*;
 
 @Entity
-@Table(name="persona")
+@Table(name="persona1")
 
 public class Persona {
 

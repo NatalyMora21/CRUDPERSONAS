@@ -16,13 +16,11 @@ public class ServiciosPersona implements InterfazServiciosPersona {
     InterfazRepositorioPersona data;
     @Override
     public List<Persona> listar() {
-
         return (List<Persona>) data.findAll();
     }
 
     @Override
     public Optional<Persona> listarId(int id) {
-
         return data.findById(id);
     }
 
@@ -32,7 +30,8 @@ public class ServiciosPersona implements InterfazServiciosPersona {
     }
 
     @Override
-    public void borar(int id) {
+    public void borrar(int id) {
+        data.deleteById(id);
 
     }
 
