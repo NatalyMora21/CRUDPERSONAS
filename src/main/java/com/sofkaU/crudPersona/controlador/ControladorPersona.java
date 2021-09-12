@@ -36,6 +36,10 @@ public class ControladorPersona {
     public void eliminarById(@PathVariable("id") int id) {
         servicio.borrar(id);
     }
+    @ PutMapping("actualizarPersona")
+    public Persona actualizarPersona(@RequestBody Persona persona){
+        return servicio.actualizar(persona);
+    }
 
 
 }
