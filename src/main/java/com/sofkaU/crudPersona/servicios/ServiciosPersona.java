@@ -32,11 +32,10 @@ public class ServiciosPersona implements InterfazServiciosPersona {
     @Override
     public void borrar(int id) {
         data.deleteById(id);
-
     }
 
     @Override
     public Persona actualizar(Persona persona) {
-        return null;
+        return data.save(persona);
     }
 }
